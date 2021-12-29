@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добро пожаловать</title>
+</head>
+<body>
+<center>
+    <img src="https://avatars.mds.yandex.net/i?id=f6586c2ce371ee572dd611e6c4785ae8-5453402-images-thumbs&n=13&exp=1" height="800">
+    <!--- for youtube video --->
+
+    <!--- photo show --->
+    <img th:src="${user.getPhoto()}" height="1000" style="border-radius: 50px">
+    <p th:text="${user.getName() + ' поздравляю с наступающим новым годом!'}" style="font-size: 50px;color: red"/>
+</center>
+</body>
+</html>
